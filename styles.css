@@ -64,10 +64,23 @@ h2 {
 p {
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .highlights h2 {
   margin-bottom: 12px;
+}
+
+.highlights ul {
+  line-height: 2;
+  list-style-type: none;
+}
+
+.highlights ul li::before {
+  content: "•";
+  font-size: 1em;
+  margin-right: 1em;
+  vertical-align: middle;
 }
 
 ul {
@@ -75,18 +88,28 @@ ul {
 }
 
 .breadcrumbs ul {
-  list-style-type: none;
   margin-top: 24px;
+  list-style-type: none;
 }
 
 .breadcrumbs a {
   text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbs:not(.grey) a {
+  color: var(--black-color);
+}
+
+.breadcrumbs a.grey {
+  color: var(--darkblue-color);
+  font-weight: 400;
 }
 
 .breadcrumbs li {
   display: inline;
-}
 
+}
 .breadcrumbs li:not(:last-child)::after {
   content: " - ";
 }
@@ -155,7 +178,7 @@ ul {
 
   .hero-image {
     max-width: 100%;
-    max-height: 850px;
+    max-height: 1000px;
     width: auto;
     height: calc(100% - 64px);
     object-fit: cover;
