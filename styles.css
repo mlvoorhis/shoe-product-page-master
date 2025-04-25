@@ -51,7 +51,7 @@ h2 {
 }
 
 .header p, .highlights li {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .bold {
@@ -67,7 +67,6 @@ h2 {
 p {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5;
 }
 
 .highlights h2 {
@@ -75,8 +74,8 @@ p {
 }
 
 .highlights ul {
-  line-height: 2;
   list-style-type: none;
+  line-height: 2;
 }
 
 .highlights ul li::before {
@@ -181,9 +180,8 @@ ul {
 
   .hero-image {
     max-width: 100%;
-    max-height: 100%;
     width: auto;
-    height: calc(100% - 64px);
+    max-height: calc(100% - 64px);
     object-fit: cover;
     display: block;
     min-width: 0;
