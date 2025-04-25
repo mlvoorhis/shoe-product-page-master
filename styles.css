@@ -67,7 +67,6 @@ h2 {
 p {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.25;
 }
 
 .highlights h2 {
@@ -94,6 +93,7 @@ ul {
   margin-top: 24px;
   list-style-type: none;
   font-size: 0.875rem;
+  letter-spacing: -0.5px;
 }
 
 .breadcrumbs a {
@@ -147,7 +147,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .cart {
@@ -169,6 +169,14 @@ ul {
 .button a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.wishlist:hover {
+  background-color: var(--lightgrey-color);
+}
+
+.cart:hover {
+  background-color: var(--darkblue-color)
 }
 
 @media screen and (min-width: 740px) {

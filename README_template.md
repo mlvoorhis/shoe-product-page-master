@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Shoe Product Page | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/simple-product-page-challenge" target="_blank">Shoe Product Page</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://mlvoorhis.github.io/shoe-product-page-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/mlvoorhis/shoe-product-page-master">
       Solution
     </a>
     <span> | </span>
@@ -30,28 +30,31 @@
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Built with](#built-with)
-- [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Thumbnail for the Shoe Product Page coding challenge](./thumbnail.jpg)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+In this project, I focused on mastering the basics of HTML and CSS syntax, learning how to incorporate images into web pages, and practicing complex layout styling using flexbox and grid. I also added interactive elements like buttons to the layout, ensuring they functioned seamlessly. By debugging layout issues, optimizing responsiveness, and refining design elements, I created a polished, user-friendly web page.
 
-- What have you learned/improved?
-- Your wisdom? :)
--->
 
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+- <b>Why my initial <code>:not(:last-child)</code> approach didn’t work</b>: I realized the problem was in how I structured my selector. I was using .container:not(:last-child) > *, which applies styles to all children only if the container itself isn't the last child — not what I intended. What I actually needed was .container > *:not(:last-child), which targets each child inside the container, excluding the last one. That subtle difference made a big impact on how the spacing behaved.
+- <b>Responsive Design Debugging</b>: I learned how to use the DevTools Inspector box model visualization. This allowed me to better visualize margins, padding, borders, and content areas, so I could better adjust spacing and avoid overflow issues. I also learned to leverage Responsive Design Mode to test how my layout adapts to different screen sizes and ensure consistency across devices.
+- <b>How to prevent overflow in grid layouts</b>: To stop images from breaking out of their columns, I used:
+```css
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+```
 
-### Useful resources
+### Useful resources 
 
 <!--
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
@@ -60,15 +63,11 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### Built with
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- Media queries
 
 ## Features
 
@@ -76,11 +75,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
 
-## Acknowledgements
+## Contact
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-
-## Author
-
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- GitHub [@mlvoorhis](https://github.com/mlvoorhis)
